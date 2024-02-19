@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace OneRMEstimation
 {
@@ -22,12 +23,12 @@ namespace OneRMEstimation
                 double calculated1RM = Calculate1RM(actualWeight, actualReps);
 
                 // 取得預計訓練次數
-                int predictedReps = Convert.ToInt32(predictedRepsTextBox.Text);
+                int predictedReps = Convert.ToInt32((predictedRepsComboBox.SelectedItem as ComboBoxItem).Content);
 
                 // 列出不同RPE強度對應的1RM重量
-                resultTextBlock.Text = $"RPE對應 [{predictedReps}] 下的訓練重量為：\n";
+                resultTextBlock.Text = $"對應  {predictedReps}  下的訓練重量為：\n";
 
-                double[] specifiedRPEs = { 10, 9.5, 9, 8.5, 8, 7.5, 7, 5, 3 };
+                double[] specifiedRPEs = {10, 9.5, 9, 8.5, 8, 7.5, 7, 5, 3 };
 
                 foreach (double rpe in specifiedRPEs)
                 {
@@ -37,12 +38,11 @@ namespace OneRMEstimation
                     // 轉換為整數
                     int int1RM = Convert.ToInt32(estimated1RM);
 
-                    resultTextBlock.Text += $"\nRPE {rpe} : {int1RM} kg\n";
+                    resultTextBlock.Text += $"RPE {rpe} : {int1RM} kg\n";
 
                     // 另外顯示1RM結果，只有RPE為10且次數為1
-                    
-                        resultTextRM.Text = $"1RM 為 :  {Convert.ToInt32(calculated1RM)} kg\n";
-                    
+                    resultTextRM.Text = $"1RM 為 :  {Convert.ToInt32(calculated1RM)} kg\n";
+
                 }
             }
             catch (Exception ex)
