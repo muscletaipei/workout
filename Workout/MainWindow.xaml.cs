@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace OneRMEstimation
 {
@@ -39,9 +40,12 @@ namespace OneRMEstimation
                     int int1RM = Convert.ToInt32(estimated1RM);
 
                     resultTextBlock.Text += $"RPE {rpe} : {int1RM} kg\n";
+                    //resultTextBlock.Foreground = Brushes.Red; // 設置為紅色
 
                     // 另外顯示1RM結果，只有RPE為10且次數為1
                     resultTextRM.Text = $"1RM 為 :  {Convert.ToInt32(calculated1RM)} kg\n";
+                    resultTextRM.FontWeight = FontWeights.Bold; // 設置為粗體
+                    resultTextRM.Foreground = Brushes.Blue; //設置為綠色
 
                 }
             }

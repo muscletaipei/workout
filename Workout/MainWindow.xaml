@@ -1,11 +1,12 @@
 ﻿<Window x:Class="OneRMEstimation.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="RPE 計算器" Height="900" Width="450">
+        Title="RPE 計算器" Height="700" Width="450">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock FontSize="18" Text="-----RPE-----" Margin="0,0,0,10" Width="106"/>
+            <TextBlock FontSize="18" Text="-----RPE-----" Margin="0,0,0,10" Width="106" Foreground="Blue" FontWeight="Bold"/>
+            <TextBlock FontSize="12" Text="Rating of Perceived Exertion" Margin="0,0,0,10" Width="171" FontWeight="Bold"/>
 
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <TextBlock Text="實際訓練重量（kg）：" VerticalAlignment="Center"/>
@@ -51,10 +52,14 @@
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
             </StackPanel>
                 <TextBlock Text="RPE 等級 描述:" VerticalAlignment="Center"/>
-                <TextBlock Text="3 中等" VerticalAlignment="Center"/>
-                <TextBlock Text="7~8.5 高強度" VerticalAlignment="Center"/>
-                <TextBlock Text="9~9.5 非常高強度" VerticalAlignment="Center"/>
-                <TextBlock Text="10 極限" VerticalAlignment="Center"/>
-                </StackPanel>
+            <TextBlock Text="RPE 1-4：沒有感覺-輕鬆" VerticalAlignment="Center"/>
+            <TextBlock Text="RPE 5-7：感覺適度-吃力" VerticalAlignment="Center"/>
+            <TextBlock Text="RPE 8-10：很吃力-極限" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Margin="85,635,85,10">
+        <TextBlock Text="Copyright © 2024 by muscletaipei@gmail.com" VerticalAlignment="Center"/>
+        </StackPanel>
+
     </Grid>
 </Window>
