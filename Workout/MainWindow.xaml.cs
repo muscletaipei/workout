@@ -72,6 +72,9 @@ namespace OneRMEstimation
                 case 8: percentage = 0.78; break;
                 case 9: percentage = 0.76; break;
                 case 10: percentage = 0.74; break;
+                case 12: percentage = 0.67; break;
+                case 15: percentage = 0.65; break;
+                case 20: percentage = 0.60; break;
             }
 
             return (1 / percentage) * weight;
@@ -97,6 +100,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.78; break;
                         case 9: percentage = 0.76; break;
                         case 10: percentage = 0.74; break;
+                        case 12: percentage = 0.67; break;
+                        case 15: percentage = 0.65; break;
+                        case 20: percentage = 0.60; break;
                     }
                     break;
                 // 其他RPE強度的百分比計算類似，可以自行擴展
@@ -113,6 +119,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.77; break;
                         case 9: percentage = 0.75; break;
                         case 10: percentage = 0.72; break;
+                        case 12: percentage = 0.65; break;
+                        case 15: percentage = 0.63; break;
+                        case 20: percentage = 0.58; break;
                     }
                     break;
                 case 9:
@@ -128,6 +137,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.76; break;
                         case 9: percentage = 0.74; break;
                         case 10: percentage = 0.71; break;
+                        case 12: percentage = 0.64; break;
+                        case 15: percentage = 0.62; break;
+                        case 20: percentage = 0.57; break;
                     }
                     break;
                 case 8.5:
@@ -143,6 +155,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.75; break;
                         case 9: percentage = 0.72; break;
                         case 10: percentage = 0.69; break;
+                        case 12: percentage = 0.63; break;
+                        case 15: percentage = 0.61; break;
+                        case 20: percentage = 0.56; break;
                     }
                     break;
                 case 8:
@@ -158,6 +173,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.74; break;
                         case 9: percentage = 0.71; break;
                         case 10: percentage = 0.68; break;
+                        case 12: percentage = 0.62; break;
+                        case 15: percentage = 0.60; break;
+                        case 20: percentage = 0.55; break;
                     }
                     break;
                 case 7.5:
@@ -173,6 +191,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.72; break;
                         case 9: percentage = 0.69; break;
                         case 10: percentage = 0.67; break;
+                        case 12: percentage = 0.61; break;
+                        case 15: percentage = 0.59; break;
+                        case 20: percentage = 0.54; break;
                     }
                     break;
                 case 7:
@@ -188,6 +209,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.71; break;
                         case 9: percentage = 0.68; break;
                         case 10: percentage = 0.65; break;
+                        case 12: percentage = 0.59; break;
+                        case 15: percentage = 0.58; break;
+                        case 20: percentage = 0.53; break;
                     }
                     break;
                 case 5:
@@ -203,6 +227,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.65; break;
                         case 9: percentage = 0.62; break;
                         case 10: percentage = 0.59; break;
+                        case 12: percentage = 0.53; break;
+                        case 15: percentage = 0.52; break;
+                        case 20: percentage = 0.47; break;
                     }
                     break;
                 case 3:
@@ -218,6 +245,9 @@ namespace OneRMEstimation
                         case 8: percentage = 0.59; break;
                         case 9: percentage = 0.56; break;
                         case 10: percentage = 0.53; break;
+                        case 12: percentage = 0.47; break;
+                        case 15: percentage = 0.46; break;
+                        case 20: percentage = 0.41; break;
                     }
                     break;
             }
